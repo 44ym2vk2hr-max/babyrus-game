@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>КриптоСкуф</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <div class="brand">КриптоСкуф</div>
+          <div class="subtitle">in-game currency</div>
+        </div>
+
+        <div class="topbar-actions">
+          <div class="balance-pill">
+            <span class="btc-icon">₿</span>
+            <span id="balance">0</span>
+          </div>
+          <button id="reset-btn" class="tiny-btn" type="button">Сброс</button>
+        </div>
+      </header>
+
+      <main class="layout">
+        <section class="play-panel">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <small>Доход / тап</small>
+              <strong id="tap-income">1</strong>
+            </div>
+            <div class="stat-card">
+              <small>Доход / сек</small>
+              <strong id="passive-income">0.05</strong>
+            </div>
+            <div class="stat-card">
+              <small>Всего уровней</small>
+              <strong id="total-levels">0</strong>
+            </div>
+          </div>
+
+          <div class="character-wrap">
+            <div class="character-glow"></div>
+            <button id="character" class="character" aria-label="Тапнуть по персонажу" type="button">
+              <img src="C1_Страница_1.png" alt="Главный герой" class="character-image" />
+            </button>
+          </div>
+        </section>
+
+        <aside class="shop-panel">
+          <h3>Магазин</h3>
+          <div id="shop"></div>
+        </aside>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
